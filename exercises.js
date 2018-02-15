@@ -255,6 +255,20 @@ printOrders(arrayOfObjects);
         to inspect your results.
 */
 
+var sumObj = {
+  a: 5,
+  b: 7,
+  result: null,
+};
+
+function objectAddition(obj){
+  obj.result = obj.a + obj.b;
+
+  return obj;
+}
+
+var subObjResult = objectAddition(sumObj);
+console.log(subObjResult);
 
 /*
 9. Print sum function and add as new key-value
