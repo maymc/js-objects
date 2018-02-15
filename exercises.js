@@ -109,6 +109,15 @@ console.log(plainBox);
     console.log the object
 */
 
+var stockCar = {
+  model: "Tesla",
+  year: 2014,
+  automaticTransmission: true,
+  driver: null,
+  passengers: [],
+};
+
+console.log(stockCar);
 
 /*
 
