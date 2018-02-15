@@ -42,13 +42,14 @@ var dog = {
   name: "Simba",
   age: 7,
   vegetarian: false,
-  color: "golden",
+  color: ["golden", "white"],
   speak: function(){
     return "bark!";
   }
 };
 
 console.log("My dog " + dog.name + " is " + dog.age + " year old and likes to " + dog.speak() + " at strangers.");
+
 
 //An empty object
 
@@ -64,6 +65,21 @@ console.log("My dog " + dog.name + " is " + dog.age + " year old and likes to " 
             
   Console.log the object.
 */
+
+var kicks = {};
+
+kicks.brand = "nike";
+kicks.color = "cornflower blue";
+kicks.size = 7.5;
+kicks.price = 70;
+kicks.buy = function(){
+  return "Now I is a cool kid!";
+};
+
+console.log(kicks);
+
+
+
 
 
 /* 
