@@ -78,10 +78,6 @@ kicks.buy = function(){
 
 console.log(kicks);
 
-
-
-
-
 /* 
 
 4. Declare a variable named `plainBox` and set its value to be an EMPTY object.
