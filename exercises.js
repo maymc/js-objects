@@ -333,6 +333,19 @@ console.log(plainBoxResult);
     Invoke your function and pass in your stockCar object, store the result to a variable named isAutomaticTransmission and use `console.log` to inspect your results.
  */
 
+//var stockCar = {};
+//stockCar.automaticTransmission = true;
+
+function detectingTransmission(obj){
+  if(obj.automaticTransmission === true)
+    return "stockCar has automatic transmission";
+  else
+    return "stockCar has manual transmission";
+}
+
+var isAutomaticTransmission = detectingTransmission(stockCar);
+console.log(isAutomaticTransmission);
+
 
 /*
 12.  Who's driving this thing?!
@@ -346,7 +359,13 @@ console.log(plainBoxResult);
       your results. Consider using `plainPerson` as your driver.
  */
 
+function addDriver(objCar, objPerson){
+  objCar.driver = objPerson;
+  return objCar;
+}
 
+var stockCarWithDriver = addDriver(stockCar, plainPerson);
+console.log(stockCarWithDriver);
 
 
 /*
@@ -381,3 +400,6 @@ console.log(plainBoxResult);
         'Marifel, age 19, is riding dirty!'
         'Victor, age 19, is riding dirty!'
  */
+
+
+
