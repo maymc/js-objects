@@ -287,6 +287,14 @@ console.log(subObjResult);
         **create more** objects and invoke your function multiple times.
  */
 
+function printObj(obj){
+  obj.output = console.log(obj.a + " + " + obj.b + " = " + obj.result);
+
+  return obj;
+}
+
+printObj(sumObj);
+
 
 /*
 10. Putting stuff in `plainBox`
@@ -297,6 +305,7 @@ console.log(subObjResult);
         Invoke your function and pass in your object (which should be `plainBox`), store the result to a variable named 
         plainBoxResult and use `console.log` to inspect your results.
  */
+
 
 
 /*
