@@ -306,7 +306,21 @@ printObj(sumObj);
         plainBoxResult and use `console.log` to inspect your results.
  */
 
+var plainBox = {};
+plainBox.contents = [];
 
+function putInPlainBox(obj){
+
+  for(var i=0; i<10; i++){
+    var randNum = Math.floor(Math.random()*100+1);
+    obj.contents.push(randNum);
+  }
+
+  return obj;
+}
+
+var plainBoxResult = putInPlainBox(plainBox);
+console.log(plainBoxResult);
 
 /*
 11. Detecting transmission
