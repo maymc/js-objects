@@ -398,37 +398,32 @@ console.log(stockCarWithDriver);
         'Victor, age 19, is riding dirty!'
  */
 
-
  var passengerList = ['Jon', 'Jason', 'Tony', 'Joe', 'Jesse', 'Nigel', 'Kelli', 'Marifel', 'Victor'];
 
 var passengerAges = [19, 12, 21, 22, 16, 9, 19, 20, 15];
-
 
 function addPassengers(car, names, ages){
   
   for(var i=0; i<names.length; i++){
     var newPassenger = {};
     buildPerson(newPassenger, names[i], ages[i]);
-    console.log(newPassenger);
+    //console.log(newPassenger);
     car.passengers.push(newPassenger);
-    console.log(car);
+    //console.log(car);
   }
 
   return car;
 }
 
-/*function displayPassengers(car){
+function displayPassengers(car){
+
   for(var i=0; i<car.passengers.length; i++){
-    for(var prop in car){
-      return car.passengers.name[i] + " , age" + car.passengers.age[i] + " , is riding dirty!";
-    }
- 
+    console.log(car.passengers[i].name + ", age " + car.passengers[i].age + ", is riding dirty!");
   }
-  
-}*/
+}
 
 addPassengers(stockCar, passengerList, passengerAges);
-//displayPassengers(stockCar);
+displayPassengers(stockCar);
 
 
 
